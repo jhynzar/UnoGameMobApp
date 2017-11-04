@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">UnoGameMobApp</string>
+    <string name="service_id">com.example.mj.unogamemobapp</string>
+</resources>

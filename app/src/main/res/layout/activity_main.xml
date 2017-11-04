@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewSwitcher xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewSwitcher"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:text="Register Service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_Host" />
+
+        <Button
+            android:text="Discover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_Discover" />
+
+
+        <Button
+            android:text="Play as Player 1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_PlayAs1" />
+        <Button
+            android:text="Play as Player 2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_PlayAs2" />
+        <Button
+            android:text="Connect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_Connect" />
+
+        <Button
+            android:text="Start Game"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_StartGame" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="#e5e5e5">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:background="#e5e5e5"
+            android:layout_margin="3dp">
+
+            <TextView
+                android:text="Your Turn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/p1_YourTurn"
+                android:layout_weight="2"
+                android:background="#fff"
+                android:gravity="center"
+                android:textSize="30sp" />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:layout_weight="10"
+                android:id="@+id/p1_HandView"
+                android:layout_margin="5dp"
+                android:background="#fff"/>
+
+            <Button
+                android:text="Oops"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/p1_hoops"
+                android:layout_weight="0"
+                android:background="#fff"
+                android:layout_margin="2dp"/>
+
+            <Button
+                android:text="End Turn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/p1_EndTurn"
+                android:layout_weight="0"
+                android:background="#fff"
+                android:layout_margin="2dp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:background="#fff"
+            android:layout_margin="1dp">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:id="@+id/img_LastCard" />
+
+            <ImageButton
+                android:layout_width="125dp"
+                android:layout_height="75dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="32dp"
+                android:id="@+id/imgBtn_DrawCard" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:background="#e5e5e5"
+            android:layout_margin="1dp">
+            <TextView
+                android:text="Your Turn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/p2_YourTurn"
+                android:layout_weight="2"
+                android:background="#fff"
+                android:gravity="center"
+                android:textSize="30sp" />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:layout_weight="10"
+                android:id="@+id/p2_HandView"
+                android:layout_margin="5dp"
+                android:background="#fff"/>
+
+            <Button
+                android:text="Oops"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/p2_hoops"
+                android:layout_weight="0"
+                android:background="#fff"
+                android:layout_margin="2dp"/>
+
+            <Button
+                android:text="End Turn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/p2_EndTurn"
+                android:layout_weight="0"
+                android:background="#fff"
+                android:layout_margin="2dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ViewSwitcher>
